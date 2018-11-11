@@ -31,12 +31,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#" onclick="$('#content').load('./home.html');">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="#" onclick="$('#content').load('./about.html');">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -47,98 +47,16 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="content">
 
-      <!-- Jumbotron Header -->
-      <header class="jumbotron my-4 bg">
-        <h1 class="display-3">O Mínimo de Sentido</h1>
-        <p class="lead text-justify">O crescente número de desaparecimentos
-          de pessoas exige da força policial uma
-         resposta
-         
-         Em meio às investigações,  o desaparecimento
-         de um dos investigadores  chama ainda mais a
-         atenção.
-         
-         Eliza, uma jovem policial resolve não deixar
-         esse caso esfriar e paralelamente ao trabalho
-         busca por pistas sobre seu colega desaparecido
-         
-         Qual o motivo do desaparecimento dele?
-         Estariam os desaparecimentos relacionados?
-         Quem está por trás disso? 
-         
-         Ajude Eliza a resolver esta trama policial nesta
-         aventura baseada em texto, tomando decisões
-         para definir o final da história.</p>
-        <!-- <a href="#" class="btn btn-primary btn-lg">Call to action!</a> -->
-      </header>
-
-      <!-- Page Features -->
-      <div class="row text-center">
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="./images/tela01.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Aventura baseada em texto</h4>
-              <p class="card-text">À personagem são apresentadas situações e o jogador decide que ação tomar.</p>
-            </div>
-            <div class="card-footer">
-              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="./images/tela02.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Diversos finais</h4>
-              <p class="card-text">As decisões que o jogador escolhe resultam em diferentes finais.</p>
-            </div>
-            <div class="card-footer">
-              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="./images/browsers.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Jogue no browser</h4>
-              <p class="card-text">Não precisa instalar. Basta abrir seu browser, acessar o endereço e começar.</p>
-            </div>
-            <div class="card-footer">
-              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Mistério e diversão</h4>
-              <p class="card-text">Narrativa interessante com reviravoltas surpreendentes.</p>
-            </div>
-            <div class="card-footer">
-              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- /.row -->
 
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-2 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Shadow PPL T-Team 2018</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -146,6 +64,11 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script >
+      $( document ).ready(function() {
+        $('#content').load('./home.html');
+      });
+    </script>
 
   </body>
 
