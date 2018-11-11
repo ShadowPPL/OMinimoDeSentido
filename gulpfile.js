@@ -9,14 +9,14 @@ gulp.task('vendor', function () {
       '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
     ])
-    .pipe(gulp.dest('./vendor/bootstrap'))
+    .pipe(gulp.dest('./vendor/bootstrap'));
 
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./vendor/jquery'))
+    .pipe(gulp.dest('./vendor/jquery'));
 
 });
 
@@ -27,7 +27,7 @@ gulp.task('browserSync', function () {
           baseDir: "./",
       },
       port: 8080,
-  })
+  });
 });
 
 gulp.task('watch',function () {
