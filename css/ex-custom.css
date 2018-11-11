@@ -14,3 +14,8 @@ body{
     -o-background-size: cover;
     color: #fff;
  }
+
+ .btn-red {
+    background-color: #fa5c5c;
+    border-color: #fa5c5c;
+ }
